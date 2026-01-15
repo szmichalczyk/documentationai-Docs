@@ -23,27 +23,17 @@
                 "title": "Introduction",
                 "path": "introduction",
                 "icon": "home"
-              },
-              {
-                "title": "Getting Started",
-                "path": "getting-started",
-                "icon": "star"
               }
             ]
           },
           {
-            "group": "What We Do",
-            "icon": "layers",
+            "group": "Intake",
+            "icon": "compass-icon",
             "pages": [
               {
-                "title": "Services",
-                "path": "services",
+                "title": "Client Material Distiller",
+                "path": "client-material-distiller",
                 "icon": "file-text"
-              },
-              {
-                "title": "Partnerships",
-                "path": "partnerships",
-                "icon": "users"
               }
             ]
           }
