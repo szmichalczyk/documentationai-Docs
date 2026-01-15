@@ -52,11 +52,14 @@
       }
     ]
   },
-  "template": "atlas",
+  "template": "classic",
   "seo": {
     "robots:index": false,
     "robots:follow": false,
     "sitemap:enabled": false,
     "llms-txt:enabled": false
-  }
+  },
+  "logo-dark": "https://blob-cdn.documentation.ai/org-a21517d1-ddaa-4783-84c1-de2014a43320/doc-265634e1-3244-447a-9477-8d32fa42424b/1768485672439-89s6mva5mjx-logo_white.svg?q=85&fm=auto&auto=compress%2Cformat",
+  "logo-light": "https://blob-cdn.documentation.ai/org-a21517d1-ddaa-4783-84c1-de2014a43320/doc-265634e1-3244-447a-9477-8d32fa42424b/1768485682986-rknnmg9bo99-logo-dark.svg?q=85&fm=auto&auto=compress%2Cformat",
+  "favicon": "https://blob-cdn.documentation.ai/org-a21517d1-ddaa-4783-84c1-de2014a43320/doc-265634e1-3244-447a-9477-8d32fa42424b/1768485763017-i9vgxku9u6-Profile-photo---1000x1000.png?q=85&fm=auto&auto=compress%2Cformat"
 }
