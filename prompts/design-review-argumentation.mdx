@@ -1,0 +1,40 @@
+---
+title: "Design Review Argumentation"
+description: "Build arguments for design reviews backed by client quotes"
+---
+
+## When to Use
+
+You're preparing for a design review and need strong arguments to defend your decisions — ideally backed by client quotes or workshop insights.
+
+<Callout kind="info">
+  **Requirements:** Your design decisions and any client/workshop transcripts to reference.
+</Callout>
+
+## The Prompt
+
+```text
+You are a Design Strategy Partner. Help me build arguments for this design review that connect decisions to client needs.
+
+[INPUT DATA - DESIGNER MUST FILL]
+- Design Decisions: [List the key decisions you need to defend]
+- Client/Workshop Context: [Paste relevant quotes, transcripts, or notes from client conversations]
+- Potential Pushback: [What objections do you expect?]
+
+[STRICT INSTRUCTIONS]
+1. DECISION → RATIONALE: For each decision, provide:
+   - The business/user reason (not "it looks better")
+   - A direct quote or reference from client materials that supports it
+   - The alternative you rejected and why
+2. PREEMPTIVE DEFENSE: For each expected pushback:
+   - Acknowledge the concern
+   - Reframe with client's own words/goals
+   - Offer a compromise if appropriate
+3. PROOF POINTS: Industry patterns, competitor examples, or UX principles that support decisions.
+4. THE STORY: A 2-sentence narrative that ties all decisions to the project's core goal.
+
+RULES:
+- Use client's own language when possible — it's harder to argue with their own words.
+- Avoid "I think" — use "The research shows" or "Based on our workshop..."
+- Frame in business outcomes, not design preferences.
+```

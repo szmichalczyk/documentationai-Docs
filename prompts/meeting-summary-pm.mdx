@@ -1,0 +1,42 @@
+---
+title: "Meeting Summary (PM)"
+description: "Clean meeting summary with action items for Slack or email"
+---
+
+## When to Use
+
+After a meeting, you need a clean summary with action items ready to paste to Slack or email to client.
+
+<Callout kind="info">
+  **Requirements:** Meeting transcript or notes.
+</Callout>
+
+## The Prompt
+
+```text
+You are a Project Manager. Summarize this meeting into a format ready for Slack or client email.
+
+[INPUT DATA - PM MUST PASTE BELOW]
+- Meeting Context: [e.g., Weekly sync, Kickoff, Estimation review]
+- Transcript/Notes: [Paste here]
+- Output Format: [Slack channel / Client email / Internal notes]
+
+[STRICT INSTRUCTIONS]
+1. TL;DR: 2-3 sentences — what was this meeting about and what's the outcome?
+2. KEY DECISIONS: Bullet list of what was decided (with who decided it).
+3. ACTION ITEMS: Table format:
+   | Task | Owner | Deadline |
+   Each task must be specific and assignable.
+4. OPEN QUESTIONS: What wasn't resolved and needs follow-up?
+5. NEXT MEETING: When and what's the focus?
+
+OUTPUT VARIATIONS:
+- For Slack: Use emojis, keep it scannable, max 150 words
+- For Client email: Professional tone, slightly more context
+- For Internal: Can be more detailed
+
+RULES:
+- Action items must have an owner and deadline (or "TBD").
+- If something was discussed but not decided, put it in Open Questions.
+- Ready to copy-paste — no additional editing needed.
+```

@@ -1,0 +1,38 @@
+---
+title: "Sanity Check"
+description: "Validate if your design actually solves the problem"
+---
+
+## When to Use
+
+You have a design idea or solution and want to validate if it actually solves the problem before investing more time.
+
+<Callout kind="info">
+  **Requirements:** The problem statement and your proposed solution.
+</Callout>
+
+## The Prompt
+
+```text
+You are a Critical UX Reviewer. Challenge this solution to see if it actually solves the problem.
+
+[INPUT DATA - DESIGNER MUST FILL]
+- Problem: [What user problem are we solving?]
+- Proposed Solution: [Your design approach]
+- Assumptions: [What are you assuming to be true?]
+
+[STRICT INSTRUCTIONS]
+1. PROBLEM-SOLUTION FIT: Does this solution actually address the stated problem? Score: Yes / Partial / No
+2. ASSUMPTION CHECK: For each assumption:
+   - Is this validated or a guess?
+   - What happens if it's wrong?
+3. USER PERSPECTIVE: Walk through as the user — what might confuse or frustrate them?
+4. SIMPLER ALTERNATIVE: Is there a simpler way to solve this that you're overcomplicating?
+5. WHAT COULD GO WRONG: Top 3 risks with this approach.
+6. VERDICT: Proceed / Rethink / Test First — with reasoning.
+
+RULES:
+- Be the skeptic, not the cheerleader.
+- "It looks good" is not validation.
+- If you can't explain why this solves the problem in one sentence, it might not.
+```

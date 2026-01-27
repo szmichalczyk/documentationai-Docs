@@ -1,0 +1,53 @@
+---
+title: "Edge Case Finder"
+description: "Find all error states, empty states, and edge cases before dev handoff"
+---
+
+## When to Use
+
+You have a screen or flow designed and need to find all the edge cases, error states, and empty states before handoff.
+
+<Callout kind="info">
+  **Requirements:** The screen/flow description and the happy path.
+</Callout>
+
+## The Prompt
+
+```text
+You are a Senior UX Designer specializing in defensive design. Find all edge cases and error states for this screen.
+
+[INPUT DATA - DESIGNER MUST FILL]
+- Screen/Flow: [Describe the screen or paste a description]
+- Happy Path: [What happens when everything works perfectly]
+- User Type: [Who is using this]
+
+[STRICT INSTRUCTIONS]
+1. EMPTY STATES: What happens when there's no data? (First use, no results, deleted content)
+2. ERROR STATES: What can go wrong? (Validation, server errors, timeouts, permissions)
+3. EDGE CASES: Unusual but valid scenarios (Long text, special characters, extreme values, slow connection)
+4. BOUNDARY CONDITIONS: Min/max limits, what happens at 0, 1, and many items
+5. INTERRUPTED FLOWS: What if user leaves mid-action, loses connection, or closes the app?
+6. PRIORITY: Rank the top 5 edge cases that MUST be designed before dev handoff.
+
+RULES:
+- Be specific — "error state" is not enough, describe WHICH error.
+- Focus on likely scenarios first, then edge cases.
+- For each case, suggest the UX response (message, fallback, redirect).
+```
+
+## What You Get
+
+| Section | Description |
+|---------|-------------|
+| Empty states | First use, no results, deleted content |
+| Error states | Validation, server, timeout, permission errors |
+| Edge cases | Long text, special chars, extreme values |
+| Boundary conditions | Min/max, 0/1/many items |
+| Interrupted flows | Connection loss, app close, mid-action exit |
+| Priority list | Top 5 must-design cases |
+
+## Tips
+
+<Callout kind="tip">
+  Run this prompt before every dev handoff. It catches 80% of the "what happens if..." questions devs will ask.
+</Callout>

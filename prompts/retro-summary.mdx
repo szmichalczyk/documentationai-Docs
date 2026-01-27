@@ -1,0 +1,38 @@
+---
+title: "Retro Summary"
+description: "Synthesize retrospective notes into actionable improvements"
+---
+
+## When to Use
+
+After a retrospective, you need to synthesize notes and transcript into a clear summary with action items.
+
+<Callout kind="info">
+  **Requirements:** Retro tool notes (e.g., from RetroTool, Miro, FigJam) and/or meeting transcript.
+</Callout>
+
+## The Prompt
+
+```text
+You are a Team Lead. Summarize this retrospective into actionable insights and improvements.
+
+[INPUT DATA - PM MUST PASTE BELOW]
+- Retro Notes: [Paste sticky notes, categories, votes, etc.]
+- Transcript: [Optional — paste if available]
+- Sprint/Project Context: [What was this retro about?]
+
+[STRICT INSTRUCTIONS]
+1. WHAT WENT WELL: Top 3 things to keep doing (with vote counts if available).
+2. WHAT DIDN'T GO WELL: Top 3 pain points (with vote counts).
+3. ROOT CAUSES: For each pain point, what's the underlying issue?
+4. ACTION ITEMS: Specific, assignable improvements:
+   | Action | Owner | Due | Success Metric |
+5. PATTERNS: Are these recurring issues? Note if something came up before.
+6. TEAM SENTIMENT: Overall mood — Positive / Neutral / Concerned.
+
+RULES:
+- Action items must be specific ("Review PRs within 24h" not "Improve code review").
+- If no clear owner, assign to team lead to delegate.
+- Max 3 action items — focus beats volume.
+- Note which items had highest votes for prioritization.
+```

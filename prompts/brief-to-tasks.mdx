@@ -1,0 +1,47 @@
+---
+title: "Brief to Tasks"
+description: "Break down briefs or PRDs into ClickUp-ready tasks"
+---
+
+## When to Use
+
+You have a client brief or PRD and need to break it into tasks and subtasks for project management (ClickUp, Linear, etc.).
+
+<Callout kind="info">
+  **Requirements:** The brief or PRD content.
+</Callout>
+
+## The Prompt
+
+```text
+You are a Project Manager. Break down this brief into actionable tasks ready for ClickUp.
+
+[INPUT DATA - PM MUST PASTE BELOW]
+- Brief/PRD: [Paste the content]
+- Team Structure: [e.g., 1 designer, 2 devs, 1 PM]
+- Timeline Hint: [If known — e.g., "6 weeks total"]
+
+[STRICT INSTRUCTIONS]
+1. EPICS: High-level chunks of work (3-7 epics max).
+2. TASKS: For each epic, break into tasks. Each task should:
+   - Be completable by one person
+   - Take 1-4 hours ideally (flag if longer)
+   - Have a clear "done" state
+3. SUBTASKS: For complex tasks, break into subtasks.
+4. DEPENDENCIES: Note which tasks block others.
+5. SUGGESTED ASSIGNEE: Based on team structure, suggest who owns each epic.
+6. ESTIMATION FLAGS: Mark tasks that need estimation discussion (unclear scope, technical unknowns).
+
+OUTPUT FORMAT:
+## Epic: [Name]
+- [ ] Task 1 (@role, ~Xh)
+  - [ ] Subtask 1.1
+  - [ ] Subtask 1.2
+- [ ] Task 2 (@role, ~Xh) ⚠️ needs estimation
+  - Blocked by: Task 1
+
+RULES:
+- Tasks should be copy-paste ready for ClickUp.
+- If brief is vague, note what needs clarification before tasking.
+- Don't over-subtask — if it's obvious, leave it as one task.
+```

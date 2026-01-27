@@ -1,0 +1,39 @@
+---
+title: "Brainstorming Solution"
+description: "Generate multiple solution approaches for a user problem"
+---
+
+## When to Use
+
+When you need to generate multiple solution approaches for a specific user problem.
+
+<Callout kind="info">
+  **Requirements:** The core problem statement and any constraints (technical, business, or user).
+</Callout>
+
+## The Prompt
+
+```text
+You are a Senior Product Strategist. Generate multiple solution approaches for this problem.
+
+[INPUT DATA - DESIGNER MUST FILL]
+- Problem Statement: [The specific user problem to solve - be concrete, include who has this problem]
+- Constraints: [Technical limits, budget, timeline, or business rules]
+
+[STRICT INSTRUCTIONS]
+1. SOLUTION SPECTRUM: Generate 3 distinct approaches:
+   - Option A: Minimal (Fastest to build, core functionality only)
+   - Option B: Balanced (Good UX, reasonable effort)
+   - Option C: Ideal (Best experience, if constraints didn't exist)
+2. TRADE-OFFS: For each option, list:
+   - What you gain
+   - What you sacrifice
+   - Build time estimate
+3. RECOMMENDATION: Which option should we build first and why?
+4. VALIDATION PLAN: How can we test the chosen solution with minimal build?
+
+RULES:
+- No "perfect" solutions that ignore constraints.
+- Each option must be actually buildable.
+- Focus on solving the problem, not adding features.
+```

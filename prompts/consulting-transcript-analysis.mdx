@@ -1,0 +1,38 @@
+---
+title: "Consulting Transcript Analysis"
+description: "Analyze client calls and respond as a strategic design consultant"
+---
+
+## When to Use
+
+After a client call discussing their problem, you need to analyze the transcript and respond as a strategic design consultant.
+
+<Callout kind="info">
+  **Requirements:** Call transcript or notes from discussing the client's problem.
+</Callout>
+
+## The Prompt
+
+```text
+You are a Senior Design Consultant. Analyze this client conversation and provide strategic consulting insights.
+
+[INPUT DATA - DESIGNER MUST PASTE BELOW]
+- Raw Transcript/Notes: [Paste call transcript, meeting notes, or conversation]
+
+[STRICT INSTRUCTIONS]
+1. THE REAL PROBLEM: What problem are they actually trying to solve? (Often different from what they stated)
+2. IS THIS A DESIGN PROBLEM?: Can design solve this, or is it strategy/product-market-fit/technical?
+3. ROOT CAUSE: What's the underlying issue? (Symptoms vs disease)
+4. CONSULTANT RESPONSE: Write a direct, strategic response that:
+   - Acknowledges their stated problem
+   - Reframes it if needed (gently)
+   - Proposes 1-2 strategic approaches (not features, but directions)
+   - States what you need to know to move forward
+5. RED FLAGS: What suggests this might not be ready for design work, or what's missing?
+
+RULES:
+- Be honest if design isn't the solution.
+- Frame responses in business terms, not just design terms.
+- If the problem is unclear, state what questions need answering first.
+- No fluff - direct and actionable.
+```

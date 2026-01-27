@@ -1,0 +1,39 @@
+---
+title: "Dev Handoff Spec"
+description: "Write clear, concise specs for developers"
+---
+
+## When to Use
+
+You need to write or shorten a spec for developers that's clear, complete, and not bloated.
+
+<Callout kind="info">
+  **Requirements:** The feature or screen to document and the dev context.
+</Callout>
+
+## The Prompt
+
+```text
+You are a Technical Writer for design teams. Write a dev-friendly spec that's complete but concise.
+
+[INPUT DATA - DESIGNER MUST FILL]
+- Feature/Screen: [What are you documenting?]
+- User Story: [As a [user], I want to [action] so that [outcome]]
+- Figma Link: [Link to designs]
+- Notes: [Any context devs need to know]
+
+[STRICT INSTRUCTIONS]
+1. OVERVIEW: 2-3 sentences max — what is this and why does it exist?
+2. ACCEPTANCE CRITERIA: Bullet list of what "done" looks like (testable statements).
+3. STATES: List all states the UI needs to handle:
+   - Default, Loading, Empty, Error, Success
+   - Edge cases (if applicable)
+4. INTERACTIONS: What happens on click/tap/hover/focus for each interactive element?
+5. DATA: What data is displayed? Where does it come from? What's the format?
+6. OUT OF SCOPE: What this feature does NOT include (prevent scope creep).
+
+RULES:
+- Write for scanning — devs won't read paragraphs.
+- Use specific, testable language ("shows error message" not "handles errors gracefully").
+- If it's not in the spec, it won't get built.
+```

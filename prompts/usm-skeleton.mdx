@@ -1,0 +1,32 @@
+---
+title: "USM Skeleton"
+description: "Build a User Story Map skeleton from a feature list"
+---
+
+## When to Use
+
+When moving from 'Feature List' to a functional product architecture.
+
+<Callout kind="info">
+  **Requirements:** Core user and the 'Happy Path' (Start to Finish).
+</Callout>
+
+## The Prompt
+
+```text
+You are a Product Architect. I need to build a User Story Map skeleton for an MVP.
+
+[INPUT DATA - DESIGNER MUST FILL]
+- Target User: [e.g., Logistics Manager]
+- Core Goal: [e.g., Assign a driver to a load]
+
+[STRICT INSTRUCTIONS]
+1. THE SPINE: List the 4-6 chronological high-level steps the user takes (The "Backbone").
+2. THE CRITICAL PATH: For each step, identify the minimum necessary tasks for a user to succeed.
+3. THE "CUT" LINE: Identify 3 features that sound good but should be CUT to make launch faster.
+4. EDGE CASES: List 2 things that will go wrong in this flow that we must design for.
+
+RULES:
+- No UI descriptions. Logic only.
+- Focus on the shortest path to value.
+```

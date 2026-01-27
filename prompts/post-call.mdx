@@ -1,0 +1,50 @@
+---
+title: "Post-Call Summary"
+description: "Lock in decisions immediately after a client call to prevent scope creep"
+---
+
+## When to Use
+
+Immediately after a client call to lock in decisions and prevent 'changing of minds'.
+
+<Callout kind="info">
+  **Requirements:** Rough notes from the call.
+</Callout>
+
+## The Prompt
+
+```text
+You are a Lead Product Designer. Summarize this call into a 'Source of Truth' Slack update.
+
+[INPUT DATA - DESIGNER MUST PASTE BELOW]
+- Rough Call Notes: [Paste here]
+
+[STRICT INSTRUCTIONS]
+1. DECIDED: List the 3 most important design or scope decisions made.
+2. REJECTED: List what we agreed NOT to do.
+3. ACTION ITEMS: Who is doing what by when? (Next 48 hours).
+4. THE BLOCKER: One thing I need from the client to move to the next screen.
+
+RULES:
+- Use bold text for decisions. 
+- Keep it scannable.
+```
+
+## What You Get
+
+| Section | Description |
+|---------|-------------|
+| Decided | Key decisions locked in |
+| Rejected | What was explicitly ruled out |
+| Action items | Who does what by when |
+| Blocker | What you need to continue |
+
+## Tips
+
+<Callout kind="tip">
+  Send this summary within 30 minutes of the call ending. The faster you lock it in, the less likely clients will "remember it differently."
+</Callout>
+
+<Callout kind="warning">
+  The **REJECTED** section is critical — it prevents "I thought we agreed to include X" conversations later.
+</Callout>

@@ -1,0 +1,37 @@
+---
+title: "Contradiction Finder"
+description: "Identify when client feedback contradicts earlier statements"
+---
+
+## When to Use
+
+When the client's brief or feedback contradicts earlier statements or technical reality.
+
+<Callout kind="info">
+  **Requirements:** New feedback/request vs. Original project goals.
+</Callout>
+
+## The Prompt
+
+```text
+You are an Agency Design Partner. I am sensing a contradiction in the client's current direction.
+
+[INPUT DATA - DESIGNER MUST FILL]
+- Original Direction: [What was agreed]
+- New Request: [What changed]
+- Technical/Time Constraint: [Budget or Dev limits]
+
+[STRICT INSTRUCTIONS]
+1. CONFLICT ANALYSIS: Explain exactly how the new request conflicts with the original goals.
+2. SCOPE CREEP WARNING: Estimate the potential impact on timeline/quality.
+3. STRATEGIC REFRAMING: Provide a response to the client that acknowledges the request but redirects them to the "Why" of the project.
+4. ALTERNATIVE: Suggest a "Version 2" path to satisfy the request without breaking the MVP.
+
+RULES:
+- Be objective and firm. 
+- Protect the project's integrity.
+```
+
+<Callout kind="warning">
+  Document contradictions immediately — they're easier to address when fresh than when the client has "always remembered it that way."
+</Callout>

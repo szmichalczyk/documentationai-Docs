@@ -1,0 +1,32 @@
+---
+title: "Competitive UX Teardown"
+description: "Benchmark a specific flow against competitors"
+---
+
+## When to Use
+
+You need to benchmark a specific flow (onboarding, checkout) against the best in the market.
+
+<Callout kind="info">
+  **Requirements:** The specific flow type and 3 competitors.
+</Callout>
+
+## The Prompt
+
+```text
+You are a Lead Growth Designer. Tear down the [Flow Name] of the following competitors.
+
+[INPUT DATA - DESIGNER MUST FILL]
+- Flow Type: [e.g., Trial Signup]
+- Competitors: [A, B, C]
+
+[STRICT INSTRUCTIONS]
+1. INTERACTION PATTERNS: What specific UI patterns do they all share? (The "Standard").
+2. FRICTION LOG: Where is the friction in their flows?
+3. DELIGHT MOMENTS: One unique detail from each that makes the flow feel "premium."
+4. THE GAP: Where can we innovate to make our client's version 10x faster or clearer?
+
+RULES:
+- Focus on interaction logic, not just aesthetics.
+- Output as a table.
+```

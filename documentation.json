@@ -12,7 +12,7 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Documentation",
+        "tab": "Prompts",
         "icon": "book",
         "groups": [
           {
@@ -27,14 +27,68 @@
             ]
           },
           {
-            "group": "Intake",
-            "icon": "compass-icon",
+            "group": "Brief & Research",
+            "icon": "search",
             "pages": [
-              {
-                "title": "Client Material Distiller",
-                "path": "client-material-distiller",
-                "icon": "file-text"
-              }
+              { "title": "Client Material Distiller", "path": "prompts/client-material-distiller", "icon": "file-text" },
+              { "title": "Research Synthesis", "path": "prompts/research-synthesis", "icon": "microscope" },
+              { "title": "Domain Literacy Hack", "path": "prompts/domain-literacy-hack", "icon": "globe" },
+              { "title": "Competitive UX Teardown", "path": "prompts/competitive-ux-tear-down", "icon": "layout" },
+              { "title": "ELI10 Explainer", "path": "prompts/eli10-explainer", "icon": "lightbulb" }
+            ]
+          },
+          {
+            "group": "Meetings & Communication",
+            "icon": "message-circle",
+            "pages": [
+              { "title": "Post-Call Summary", "path": "prompts/post-call", "icon": "phone" },
+              { "title": "Meeting Summary (PM)", "path": "prompts/meeting-summary-pm", "icon": "clipboard" },
+              { "title": "Weekly Meeting Prep", "path": "prompts/weekly-meeting-prep", "icon": "calendar" },
+              { "title": "Discovery Session Agenda", "path": "prompts/discovery-session-agenda", "icon": "compass" },
+              { "title": "Slack Update", "path": "prompts/slack-update", "icon": "send" },
+              { "title": "Loom Script", "path": "prompts/loom-script", "icon": "video" },
+              { "title": "Retro Summary", "path": "prompts/retro-summary", "icon": "refresh-cw" }
+            ]
+          },
+          {
+            "group": "Strategy & Scoping",
+            "icon": "target",
+            "pages": [
+              { "title": "Consulting Transcript Analysis", "path": "prompts/consulting-transcript-analysis", "icon": "briefcase" },
+              { "title": "Feature Prioritization", "path": "prompts/feature-prioritization", "icon": "list-ordered" },
+              { "title": "USM Skeleton", "path": "prompts/usm-skeleton", "icon": "map" },
+              { "title": "Brief to Tasks", "path": "prompts/brief-to-tasks", "icon": "check-square" },
+              { "title": "Brainstorming Solution", "path": "prompts/brainstorming-solution", "icon": "zap" },
+              { "title": "Process Optimizer", "path": "prompts/process-optimizer", "icon": "settings" }
+            ]
+          },
+          {
+            "group": "Design & Validation",
+            "icon": "pen-tool",
+            "pages": [
+              { "title": "Flow Simplifier", "path": "prompts/flow-simplifier", "icon": "minimize" },
+              { "title": "Edge Case Finder", "path": "prompts/edge-case-finder", "icon": "alert-triangle" },
+              { "title": "Sanity Check", "path": "prompts/sanity-check", "icon": "check-circle" },
+              { "title": "UX Copy", "path": "prompts/ux-copy", "icon": "type" },
+              { "title": "Dev Handoff Spec", "path": "prompts/dev-handoff-spec", "icon": "code" }
+            ]
+          },
+          {
+            "group": "Client Management",
+            "icon": "users",
+            "pages": [
+              { "title": "Strategic No Pushback", "path": "prompts/strategic-no-pushback", "icon": "shield" },
+              { "title": "Contradiction Finder", "path": "prompts/contradiction-finder", "icon": "alert-circle" },
+              { "title": "Design Review Argumentation", "path": "prompts/design-review-argumentation", "icon": "message-square" },
+              { "title": "Communication Coach", "path": "prompts/communication-coach", "icon": "mic" }
+            ]
+          },
+          {
+            "group": "Branding",
+            "icon": "palette",
+            "pages": [
+              { "title": "Brand Workshop Synthesis", "path": "prompts/brand-workshop-synthesis", "icon": "layers" },
+              { "title": "Moodboard Narrative", "path": "prompts/moodboard-narrative", "icon": "image" }
             ]
           }
         ]
