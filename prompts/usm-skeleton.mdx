@@ -1,32 +1,32 @@
 ---
 title: "USM Skeleton"
-description: "Build a User Story Map skeleton from a feature list"
+description: "Build user story map skeletons from vague feature requests"
 ---
 
 ## When to Use
 
-When moving from 'Feature List' to a functional product architecture.
+Client describes a feature vaguely (e.g., "We need a dashboard"). You need to build a User Story Map skeleton.
 
-<Callout kind="info">
-  **Requirements:** Core user and the 'Happy Path' (Start to Finish).
-</Callout>
+## Requirements
+
+Vague feature request and primary user type.
 
 ## The Prompt
 
-```text
-You are a Product Architect. I need to build a User Story Map skeleton for an MVP.
+```text wrap
+You are a Product Designer. Build a User Story Map (USM) skeleton for this vague feature.
 
 [INPUT DATA - DESIGNER MUST FILL]
-- Target User: [e.g., Logistics Manager]
-- Core Goal: [e.g., Assign a driver to a load]
+- Vague Feature: [e.g., "A dashboard for tracking orders"]
+- Primary User: [e.g., "Operations Manager"]
 
 [STRICT INSTRUCTIONS]
-1. THE SPINE: List the 4-6 chronological high-level steps the user takes (The "Backbone").
-2. THE CRITICAL PATH: For each step, identify the minimum necessary tasks for a user to succeed.
-3. THE "CUT" LINE: Identify 3 features that sound good but should be CUT to make launch faster.
-4. EDGE CASES: List 2 things that will go wrong in this flow that we must design for.
+1. ACTIVITIES: What are the 3 high-level goals this user has related to this feature?
+2. TASKS: Under each Activity, list 2-3 Tasks (user actions).
+3. STORIES: Under each Task, generate 2-3 User Stories (specific, testable requirements).
+4. QUESTIONS: List 2 open questions per activity that will affect scope.
 
 RULES:
-- No UI descriptions. Logic only.
-- Focus on the shortest path to value.
+- User Stories must follow: "As [User], I want [action] so that [outcome]."
+- No technical implementation details.
 ```

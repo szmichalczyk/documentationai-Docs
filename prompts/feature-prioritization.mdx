@@ -1,36 +1,33 @@
 ---
 title: "Feature Prioritization"
-description: "Prioritize feature lists into MVP vs. future phases"
+description: "Prioritize a feature backlog for an MVP"
 ---
 
 ## When to Use
 
-When the client or team has a long feature list and you need to determine what's actually in the MVP.
+A stakeholder sends a 'wish list' and you need to cut it to an MVP.
 
-<Callout kind="info">
-  **Requirements:** The full feature list and the core user goal.
-</Callout>
+## Requirements
+
+Feature list from the stakeholder.
 
 ## The Prompt
 
-```text
-You are a Product Strategist. Prioritize this feature list into MVP vs. future phases.
+```text wrap
+You are a Product Strategist. Prioritize this backlog for an MVP.
 
-[INPUT DATA - DESIGNER MUST FILL]
-- Core User Goal: [The one thing the user must accomplish]
-- Full Feature List: [All features requested - bullet list]
-- Launch Deadline: [If applicable]
-- Technical Constraints: [Any known limitations]
+[INPUT DATA - DESIGNER MUST PASTE BELOW]
+- Feature List: [Paste raw list here]
+- Target User: [Primary user persona]
+- Core Goal: [What must the user accomplish in V1?]
 
 [STRICT INSTRUCTIONS]
-1. MVP FEATURES: List only features required for the user to achieve the core goal (the "critical path").
-2. PHASE 2: Features that enhance the experience but aren't required for launch.
-3. CUT: Features that should be removed entirely (explain why - scope creep, wrong user, etc.).
-4. DEPENDENCIES: Identify which Phase 2 features depend on MVP features.
-5. RISK ASSESSMENT: Which MVP features are highest risk (complexity, unknowns, dependencies)?
+1. MUST-HAVE: Features that directly enable the [Core Goal]. Maximum 3.
+2. SHOULD-HAVE: Features that improve the experience but aren't critical for V1.
+3. OUT OF SCOPE: Features that add risk/complexity with low value (justify why).
+4. RISKS: What happens if we ship without a 'nice-to-have' and it's actually critical?
 
 RULES:
-- MVP must be shippable in 4-6 weeks (adjust based on deadline).
-- If MVP is too large, identify what can be simplified or removed.
-- Every cut feature needs a reason, not just "nice to have."
+- Be ruthless. If it's not serving [Target User]'s core need, push it to V2.
+- Output as a table.
 ```

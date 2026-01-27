@@ -1,42 +1,41 @@
 ---
 title: "Process Optimizer"
-description: "Solve operational problems with industry-tested approaches"
+description: "Identify inefficiencies in team processes"
 ---
 
 ## When to Use
 
-You're trying to solve an operational problem or optimize a process and want ideas based on industry standards.
+A process feels broken or inefficient (handoffs, reviews, approvals) and you want to identify improvements.
 
-<Callout kind="info">
-  **Requirements:** The problem context and your current thinking.
-</Callout>
+## Requirements
+
+Description of the current process and the pain points experienced.
 
 ## The Prompt
 
-```text
-You are an Operations Consultant. Help me solve this process problem with industry-tested approaches.
+```text wrap
+You are an Operations Consultant. Analyze this process and identify improvements.
 
 [INPUT DATA - FILL BELOW]
-- The Problem: [Describe the issue in detail]
-- Current Process: [How does it work now?]
-- What You've Tried: [Any solutions already attempted?]
-- Constraints: [Budget, team size, tools available, etc.]
-- Your Ideas: [What are you already considering?]
+- Process Name: [e.g., "Design Review Process"]
+- Current Steps: [Describe the current workflow step by step]
+- Pain Points: [What's frustrating? Where does it break down?]
+- Stakeholders: [Who's involved at each step?]
 
 [STRICT INSTRUCTIONS]
-1. PROBLEM DIAGNOSIS: Is this a people, process, or tools problem? (Or combination)
-2. INDUSTRY STANDARDS: How do similar companies solve this?
-   - What's the "textbook" approach?
-   - What's the lean/scrappy approach?
-3. YOUR IDEAS EVALUATED: For each idea you mentioned:
-   - Pros and cons
-   - What could go wrong
-4. ALTERNATIVE APPROACHES: 2-3 options you might not have considered.
-5. RECOMMENDED APPROACH: What would I try first and why?
-6. PILOT PLAN: How to test the solution on a small scale before full rollout.
+1. PROCESS MAP: Restate the current process as a clear flow
+2. BOTTLENECK ANALYSIS:
+   - Where does work pile up?
+   - Where does information get lost?
+   - Where do handoffs fail?
+3. ROOT CAUSES: For each pain point, identify the underlying cause
+4. QUICK WINS: Changes that can be made this week with no dependencies
+5. STRUCTURAL FIXES: Bigger changes that need buy-in or tooling
+6. RECOMMENDED PROCESS: The optimized workflow with changes highlighted
+7. METRICS: How will we know if the new process is better?
 
 RULES:
-- Be practical — fancy solutions that require 10 new tools aren't helpful.
-- Consider the human factor — will people actually adopt this?
-- Start with the simplest solution that might work.
+- Don't add complexity — look for things to remove first.
+- Consider: Would this process work with 2x the volume?
+- Every recommendation should reduce friction, not just move it.
 ```

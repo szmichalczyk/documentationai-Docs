@@ -1,38 +1,49 @@
 ---
 title: "Retro Summary"
-description: "Synthesize retrospective notes into actionable improvements"
+description: "Summarize retrospective sessions into actionable improvements"
 ---
 
 ## When to Use
 
-After a retrospective, you need to synthesize notes and transcript into a clear summary with action items.
+After a team retrospective, you need to summarize findings and create actionable improvements.
 
-<Callout kind="info">
-  **Requirements:** Retro tool notes (e.g., from RetroTool, Miro, FigJam) and/or meeting transcript.
-</Callout>
+## Requirements
+
+Retrospective notes (what went well, what didn't, discussion points).
 
 ## The Prompt
 
-```text
-You are a Team Lead. Summarize this retrospective into actionable insights and improvements.
+```text wrap
+You are a Process Improvement Specialist. Summarize this retro into actionable improvements.
 
 [INPUT DATA - PM MUST PASTE BELOW]
-- Retro Notes: [Paste sticky notes, categories, votes, etc.]
-- Transcript: [Optional — paste if available]
-- Sprint/Project Context: [What was this retro about?]
+- Retro Notes: [Paste raw notes — what went well, what didn't, discussion points]
+- Sprint/Project Context: [What were we working on?]
+- Previous Actions: [Optional — what did we commit to improving last time?]
 
 [STRICT INSTRUCTIONS]
-1. WHAT WENT WELL: Top 3 things to keep doing (with vote counts if available).
-2. WHAT DIDN'T GO WELL: Top 3 pain points (with vote counts).
-3. ROOT CAUSES: For each pain point, what's the underlying issue?
-4. ACTION ITEMS: Specific, assignable improvements:
-   | Action | Owner | Due | Success Metric |
-5. PATTERNS: Are these recurring issues? Note if something came up before.
-6. TEAM SENTIMENT: Overall mood — Positive / Neutral / Concerned.
+1. WINS (Keep Doing):
+   - What worked well that we should explicitly continue?
+   - Why did it work? (So we can replicate it)
+
+2. PAIN POINTS (Stop/Change):
+   - What caused friction?
+   - Root cause (not just symptom)
+
+3. ACTION ITEMS:
+   | Improvement | Owner | How We'll Measure Success | Deadline |
+   - Maximum 3 actions (focus > quantity)
+   - Each must be specific and measurable
+
+4. PATTERNS:
+   - Is this pain point recurring from previous retros?
+   - What systemic change would prevent it?
+
+5. FOLLOW-UP:
+   - How/when will we check if improvements worked?
 
 RULES:
-- Action items must be specific ("Review PRs within 24h" not "Improve code review").
-- If no clear owner, assign to team lead to delegate.
-- Max 3 action items — focus beats volume.
-- Note which items had highest votes for prioritization.
+- Actions must have a single owner (not "the team").
+- If something was raised but not actionable, note it as "Parked."
+- No action item should take more than 1 sprint to implement.
 ```

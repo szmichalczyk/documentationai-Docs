@@ -1,53 +1,42 @@
 ---
 title: "Edge Case Finder"
-description: "Find all error states, empty states, and edge cases before dev handoff"
+description: "Identify edge cases and error states for a screen or flow"
 ---
 
 ## When to Use
 
-You have a screen or flow designed and need to find all the edge cases, error states, and empty states before handoff.
+You're designing a screen or flow and need to identify all edge cases, error states, and unhappy paths before handoff.
 
-<Callout kind="info">
-  **Requirements:** The screen/flow description and the happy path.
-</Callout>
+## Requirements
+
+Screen or flow description with its happy path.
 
 ## The Prompt
 
-```text
-You are a Senior UX Designer specializing in defensive design. Find all edge cases and error states for this screen.
+```text wrap
+You are a QA-minded Product Designer. Identify all edge cases and error states for this screen/flow.
 
 [INPUT DATA - DESIGNER MUST FILL]
-- Screen/Flow: [Describe the screen or paste a description]
-- Happy Path: [What happens when everything works perfectly]
-- User Type: [Who is using this]
+- Screen/Flow: [Describe the screen or flow you're designing]
+- Happy Path: [What's the intended user journey?]
+- Key Data: [What data is being displayed, entered, or manipulated?]
 
 [STRICT INSTRUCTIONS]
-1. EMPTY STATES: What happens when there's no data? (First use, no results, deleted content)
-2. ERROR STATES: What can go wrong? (Validation, server errors, timeouts, permissions)
-3. EDGE CASES: Unusual but valid scenarios (Long text, special characters, extreme values, slow connection)
-4. BOUNDARY CONDITIONS: Min/max limits, what happens at 0, 1, and many items
-5. INTERRUPTED FLOWS: What if user leaves mid-action, loses connection, or closes the app?
-6. PRIORITY: Rank the top 5 edge cases that MUST be designed before dev handoff.
+1. EMPTY STATES: What if there's no data? First-time user? Deleted content?
+2. ERROR STATES: What can fail? (Validation, API, permissions, timeout)
+3. BOUNDARY CONDITIONS: What if there's too much data? Too little? Weird characters?
+4. USER MISTAKES: What will users inevitably do wrong?
+5. PERMISSION SCENARIOS: What if they don't have access? Partial access?
+6. LOADING & TIMING: What if it's slow? What if something loads out of order?
+7. DEVICE/CONTEXT: Mobile? Offline? Interrupted mid-flow?
+
+For each edge case, specify:
+- THE SCENARIO: What exactly happens
+- THE UX QUESTION: What should the user see/do?
+- PRIORITY: Must-have for V1 / Nice-to-have / V2
 
 RULES:
-- Be specific — "error state" is not enough, describe WHICH error.
-- Focus on likely scenarios first, then edge cases.
-- For each case, suggest the UX response (message, fallback, redirect).
+- Be paranoid. Assume everything that can go wrong, will.
+- Don't just list — prioritize what must be designed now vs. later.
+- If something needs a design decision, flag it clearly.
 ```
-
-## What You Get
-
-| Section | Description |
-|---------|-------------|
-| Empty states | First use, no results, deleted content |
-| Error states | Validation, server, timeout, permission errors |
-| Edge cases | Long text, special chars, extreme values |
-| Boundary conditions | Min/max, 0/1/many items |
-| Interrupted flows | Connection loss, app close, mid-action exit |
-| Priority list | Top 5 must-design cases |
-
-## Tips
-
-<Callout kind="tip">
-  Run this prompt before every dev handoff. It catches 80% of the "what happens if..." questions devs will ask.
-</Callout>

@@ -1,40 +1,39 @@
 ---
 title: "Flow Simplifier"
-description: "Simplify complex flows without losing functionality"
+description: "Simplify complex user flows"
 ---
 
 ## When to Use
 
-You have a complex flow that feels overdesigned and need to simplify it without losing functionality.
+You have a flow that feels too long or complicated and want AI to challenge unnecessary steps.
 
-<Callout kind="info">
-  **Requirements:** The current flow description and the core user goal.
-</Callout>
+## Requirements
+
+Current flow steps and user goal.
 
 ## The Prompt
 
-```text
-You are a UX Minimalist. Analyze this flow and propose ways to simplify it.
+```text wrap
+You are a UX Optimization Specialist. Challenge this flow and find ways to simplify it.
 
 [INPUT DATA - DESIGNER MUST FILL]
-- Current Flow: [Describe steps, screens, or paste a flow description]
-- Core User Goal: [What must the user accomplish?]
-- Constraints: [Any steps that MUST stay for legal/business reasons]
+- User Goal: [What is the user trying to accomplish?]
+- Current Flow: [List the current steps, numbered]
+- Constraints: [Any steps that CANNOT be removed? e.g., Legal requirements]
 
 [STRICT INSTRUCTIONS]
-1. STEP AUDIT: For each step, ask: "Can the user achieve their goal without this?"
-   - KEEP: Essential for goal completion
-   - MERGE: Can be combined with another step
-   - DEFER: Move to later (progressive disclosure)
-   - CUT: Remove entirely
-2. FRICTION POINTS: Where is the user doing unnecessary work?
-3. SIMPLIFIED FLOW: Propose the minimal version (aim for 50% fewer steps).
-4. WHAT YOU LOSE: Be honest about trade-offs of simplification.
-5. VALIDATION: How can we test if the simpler version works?
+1. FRICTION AUDIT: For each step, ask: Is this necessary for the user's goal?
+   - Mark as: ESSENTIAL / QUESTIONABLE / REMOVABLE
+2. SIMPLIFICATION OPTIONS:
+   - Quick Win: What can be removed with no negative impact?
+   - Smart Default: What steps can be auto-filled or skipped with defaults?
+   - Progressive Disclosure: What can be moved to "advanced" or shown later?
+   - Merge: Which steps can be combined into one screen?
+3. RADICAL OPTION: What if we cut the flow by 50%? What would break?
+4. RECOMMENDED FLOW: The simplified flow with reasoning.
 
 RULES:
-- Default to removing, not adding.
-- "Nice to have" is not a reason to keep a step.
-- Question every modal, confirmation, and extra screen.
-- The best flow is the one the user doesn't notice.
+- Challenge every step. "We've always done it this way" is not a reason.
+- Consider: What if the user is on mobile? In a hurry?
+- Removing friction is not the same as removing features.
 ```

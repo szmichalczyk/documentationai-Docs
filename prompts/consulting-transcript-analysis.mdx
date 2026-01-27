@@ -1,38 +1,43 @@
 ---
 title: "Consulting Transcript Analysis"
-description: "Analyze client calls and respond as a strategic design consultant"
+description: "Analyze client call transcripts and provide strategic consulting insights"
 ---
 
 ## When to Use
 
-After a client call discussing their problem, you need to analyze the transcript and respond as a strategic design consultant.
+After a client call where they shared problems, pain points, or ambitions - you want a consultant-level analysis of what's really going on and how design can help.
 
-<Callout kind="info">
-  **Requirements:** Call transcript or notes from discussing the client's problem.
-</Callout>
+## Requirements
+
+Raw call transcript, meeting notes, or summary of client conversation.
 
 ## The Prompt
 
-```text
-You are a Senior Design Consultant. Analyze this client conversation and provide strategic consulting insights.
+```text wrap
+You are a Senior Product Design Consultant. Analyze this client conversation and provide strategic recommendations.
 
-[INPUT DATA - DESIGNER MUST PASTE BELOW]
-- Raw Transcript/Notes: [Paste call transcript, meeting notes, or conversation]
+[INPUT DATA - PASTE BELOW]
+- Transcript/Notes: [Paste raw transcript or meeting notes here]
 
 [STRICT INSTRUCTIONS]
-1. THE REAL PROBLEM: What problem are they actually trying to solve? (Often different from what they stated)
-2. IS THIS A DESIGN PROBLEM?: Can design solve this, or is it strategy/product-market-fit/technical?
-3. ROOT CAUSE: What's the underlying issue? (Symptoms vs disease)
-4. CONSULTANT RESPONSE: Write a direct, strategic response that:
-   - Acknowledges their stated problem
-   - Reframes it if needed (gently)
-   - Proposes 1-2 strategic approaches (not features, but directions)
-   - States what you need to know to move forward
-5. RED FLAGS: What suggests this might not be ready for design work, or what's missing?
+1. THE REAL PROBLEM: What is the actual underlying problem (not what they said they want)? Look for pain points, frustrations, and goals beneath the surface.
+
+2. STAKEHOLDER DYNAMICS: Who has power? Who has concerns? What political factors might influence decisions?
+
+3. CAN DESIGN SOLVE THIS?: 
+   - If YES: What type of design intervention makes sense? (Research / UX / UI / Full Product)
+   - If PARTIALLY: What can design address vs. what's a business/process issue?
+   - If NO: What should they actually do instead?
+
+4. CONSULTANT RESPONSE: Write a 3-4 sentence response I could say in the next meeting that:
+   - Shows I understood their real problem
+   - Positions design as a strategic solution
+   - Asks one question that demonstrates expertise
+
+5. RED FLAGS: Any warning signs about scope, expectations, or client readiness?
 
 RULES:
-- Be honest if design isn't the solution.
-- Frame responses in business terms, not just design terms.
-- If the problem is unclear, state what questions need answering first.
-- No fluff - direct and actionable.
+- Don't just summarize — interpret.
+- Be direct about whether this is a good fit for design work.
+- The consultant response should sound like a senior advisor, not a vendor.
 ```

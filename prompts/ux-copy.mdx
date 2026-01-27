@@ -1,34 +1,34 @@
 ---
 title: "UX Copy"
-description: "Write clear, functional copy for UI elements"
+description: "Generate microcopy for UI states"
 ---
 
 ## When to Use
 
-Writing buttons, empty states, alerts, or any UI text that needs to be clear and functional.
+You're finalizing a screen and need placeholder text replaced with real, contextual microcopy.
 
-<Callout kind="info">
-  **Requirements:** User goal, current screen state, and product tone.
-</Callout>
+## Requirements
+
+Screen description, state type, and product tone.
 
 ## The Prompt
 
-```text
-You are a Senior UX Writer. Draft functional copy for the following UI element.
+```text wrap
+You are a UX Writer. Write production-ready microcopy for this UI state.
 
 [INPUT DATA - DESIGNER MUST FILL]
-- UI Element: [e.g., Empty state for search, Error message, Button label, Onboarding step]
-- User Goal: [e.g., Find a specific invoice]
-- Product Tone: [e.g., Professional, minimal / Friendly, casual]
+- Screen/Component: [e.g., "Settings Page - Delete Account Modal"]
+- State: [Empty State / Error / Success / CTA / Tooltip / Placeholder]
+- Product Tone: [Friendly / Formal / Playful / Minimal]
 
 [STRICT INSTRUCTIONS]
-1. PROVIDE 3 VARIATIONS:
-   - Option A: Purely functional (Direct).
-   - Option B: Benefit-driven (Why it matters).
-   - Option C: Action-oriented (What to do next).
-2. RATIONALE: Why is Option A the safest choice for an MVP?
+1. PRIMARY COPY: The main headline/text for this state (1-2 lines max).
+2. SUPPORTING COPY: Body text or explanation (if needed, max 2 lines).
+3. CTA TEXT: The button or action label.
+4. VARIATIONS: Provide 2 alternatives for each with different tones.
 
 RULES:
-- No jargon. No "Click here".
-- Max 12 words per variation.
+- No lorem ipsum.
+- All copy must be context-aware (reference the specific action/state).
+- Avoid clichés ("Oops!", "Something went wrong").
 ```

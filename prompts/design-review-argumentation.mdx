@@ -1,40 +1,41 @@
 ---
 title: "Design Review Argumentation"
-description: "Build arguments for design reviews backed by client quotes"
+description: "Prepare arguments to defend your design decisions in review"
 ---
 
 ## When to Use
 
-You're preparing for a design review and need strong arguments to defend your decisions — ideally backed by client quotes or workshop insights.
+Before a design review where you need to defend a controversial or non-obvious design decision.
 
-<Callout kind="info">
-  **Requirements:** Your design decisions and any client/workshop transcripts to reference.
-</Callout>
+## Requirements
+
+The design decision you made and the expected pushback.
 
 ## The Prompt
 
-```text
-You are a Design Strategy Partner. Help me build arguments for this design review that connect decisions to client needs.
+```text wrap
+You are a Design Advocate. Help me prepare arguments to defend this design decision in tomorrow's review.
 
 [INPUT DATA - DESIGNER MUST FILL]
-- Design Decisions: [List the key decisions you need to defend]
-- Client/Workshop Context: [Paste relevant quotes, transcripts, or notes from client conversations]
-- Potential Pushback: [What objections do you expect?]
+- The Decision: [What did you design and why?]
+- Expected Pushback: [What objections do you anticipate?]
+- Stakeholder Type: [Dev / PM / Client / Executive]
 
 [STRICT INSTRUCTIONS]
-1. DECISION → RATIONALE: For each decision, provide:
-   - The business/user reason (not "it looks better")
-   - A direct quote or reference from client materials that supports it
-   - The alternative you rejected and why
-2. PREEMPTIVE DEFENSE: For each expected pushback:
+1. THE FRAME: How should I open the discussion to set the right context?
+2. EVIDENCE BANK: 3 supporting points I can use:
+   - User-based argument (research, patterns, behavior)
+   - Business argument (conversion, efficiency, cost)
+   - Technical argument (feasibility, scalability)
+3. OBJECTION HANDLING: For each expected pushback:
    - Acknowledge the concern
-   - Reframe with client's own words/goals
-   - Offer a compromise if appropriate
-3. PROOF POINTS: Industry patterns, competitor examples, or UX principles that support decisions.
-4. THE STORY: A 2-sentence narrative that ties all decisions to the project's core goal.
+   - Reframe it
+   - Offer a path forward
+4. THE CONCESSION: What's one thing I can offer to compromise on without losing the core decision?
+5. THE QUESTION: A strategic question I can ask to shift the conversation if I'm losing.
 
 RULES:
-- Use client's own language when possible — it's harder to argue with their own words.
-- Avoid "I think" — use "The research shows" or "Based on our workshop..."
-- Frame in business outcomes, not design preferences.
+- Arguments must be specific to this decision — no generic UX principles.
+- Anticipate at least 3 objections, even if the designer only listed 1.
+- Tone: Confident but collaborative, not defensive.
 ```

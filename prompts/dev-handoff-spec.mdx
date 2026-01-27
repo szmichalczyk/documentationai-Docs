@@ -1,39 +1,48 @@
 ---
 title: "Dev Handoff Spec"
-description: "Write clear, concise specs for developers"
+description: "Generate detailed specifications for developer handoff"
 ---
 
 ## When to Use
 
-You need to write or shorten a spec for developers that's clear, complete, and not bloated.
+You're handing off a design to developers and need to write clear specs without missing details.
 
-<Callout kind="info">
-  **Requirements:** The feature or screen to document and the dev context.
-</Callout>
+## Requirements
+
+Screen description or Figma link with all states and interactions to document.
 
 ## The Prompt
 
-```text
-You are a Technical Writer for design teams. Write a dev-friendly spec that's complete but concise.
+```text wrap
+You are a Technical Design Specifier. Generate a developer handoff specification for this screen.
 
 [INPUT DATA - DESIGNER MUST FILL]
-- Feature/Screen: [What are you documenting?]
-- User Story: [As a [user], I want to [action] so that [outcome]]
-- Figma Link: [Link to designs]
-- Notes: [Any context devs need to know]
+- Screen Name: [e.g., "User Profile Settings"]
+- Figma Link: [Optional]
+- Description: [What does this screen do?]
+- States: [List all states: default, hover, active, disabled, error, loading, empty]
+- Interactions: [List all interactions: clicks, swipes, animations]
 
 [STRICT INSTRUCTIONS]
-1. OVERVIEW: 2-3 sentences max — what is this and why does it exist?
-2. ACCEPTANCE CRITERIA: Bullet list of what "done" looks like (testable statements).
-3. STATES: List all states the UI needs to handle:
-   - Default, Loading, Empty, Error, Success
-   - Edge cases (if applicable)
-4. INTERACTIONS: What happens on click/tap/hover/focus for each interactive element?
-5. DATA: What data is displayed? Where does it come from? What's the format?
-6. OUT OF SCOPE: What this feature does NOT include (prevent scope creep).
+Generate a spec covering:
+1. COMPONENT BREAKDOWN: List every UI component on the screen with:
+   - Component name
+   - States it can be in
+   - Data it displays (and source)
+2. INTERACTION SPEC: For each interactive element:
+   - Trigger (click, hover, etc.)
+   - Behavior (what happens)
+   - Animation (if any, with duration)
+3. DATA REQUIREMENTS:
+   - What API endpoints are needed?
+   - What data fields are required?
+   - What happens if data is missing?
+4. EDGE CASES: What should devs handle that isn't obvious from the design?
+5. RESPONSIVE NOTES: Any breakpoint-specific behavior?
+6. ACCESSIBILITY: Key a11y requirements (focus states, ARIA labels, etc.)
 
 RULES:
-- Write for scanning — devs won't read paragraphs.
-- Use specific, testable language ("shows error message" not "handles errors gracefully").
-- If it's not in the spec, it won't get built.
+- Be specific. "Button turns blue" is better than "button changes color."
+- Include timing for animations (e.g., "200ms ease-in-out").
+- If something isn't designed yet, flag it clearly.
 ```

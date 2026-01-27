@@ -1,39 +1,36 @@
 ---
 title: "Brainstorming Solution"
-description: "Generate multiple solution approaches for a user problem"
+description: "Generate multiple solution approaches for a design challenge"
 ---
 
 ## When to Use
 
-When you need to generate multiple solution approaches for a specific user problem.
+You're stuck on how to approach a design problem and need fresh solution directions.
 
-<Callout kind="info">
-  **Requirements:** The core problem statement and any constraints (technical, business, or user).
-</Callout>
+## Requirements
+
+The design problem or challenge you're facing.
 
 ## The Prompt
 
-```text
-You are a Senior Product Strategist. Generate multiple solution approaches for this problem.
+```text wrap
+You are a Senior Product Designer with expertise in diverse solution approaches. Help me brainstorm solutions for this design challenge.
 
 [INPUT DATA - DESIGNER MUST FILL]
-- Problem Statement: [The specific user problem to solve - be concrete, include who has this problem]
-- Constraints: [Technical limits, budget, timeline, or business rules]
+- Problem Statement: [What are you trying to solve? Include any relevant context about users, constraints, or business goals]
+- Constraints: [Technical, timeline, or resource limitations]
 
 [STRICT INSTRUCTIONS]
-1. SOLUTION SPECTRUM: Generate 3 distinct approaches:
-   - Option A: Minimal (Fastest to build, core functionality only)
-   - Option B: Balanced (Good UX, reasonable effort)
-   - Option C: Ideal (Best experience, if constraints didn't exist)
-2. TRADE-OFFS: For each option, list:
-   - What you gain
-   - What you sacrifice
-   - Build time estimate
-3. RECOMMENDATION: Which option should we build first and why?
-4. VALIDATION PLAN: How can we test the chosen solution with minimal build?
+1. REFRAME: First, reframe the problem as 3 different "How Might We" questions to open up the solution space.
+2. SOLUTION DIRECTIONS: For each HMW, propose 2-3 distinct approaches:
+   - THE CONVENTIONAL: The expected, proven pattern
+   - THE INNOVATIVE: A fresh approach from a different domain
+   - THE RADICAL: A "what if we flipped it entirely" option
+3. TRADE-OFFS: For each direction, identify the key trade-off (what you gain vs. what you sacrifice).
+4. RECOMMENDATION: Given the constraints, which 1-2 directions should I prototype first and why?
 
 RULES:
-- No "perfect" solutions that ignore constraints.
-- Each option must be actually buildable.
-- Focus on solving the problem, not adding features.
+- No generic solutions. Each must be specific to this problem.
+- "More research" is not a solution — propose testable ideas.
+- Include at least one approach that challenges the original problem framing.
 ```

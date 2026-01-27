@@ -1,47 +1,46 @@
 ---
 title: "Brief to Tasks"
-description: "Break down briefs or PRDs into ClickUp-ready tasks"
+description: "Convert project briefs into actionable task lists"
 ---
 
 ## When to Use
 
-You have a client brief or PRD and need to break it into tasks and subtasks for project management (ClickUp, Linear, etc.).
+You receive a project brief and need to quickly break it down into actionable design tasks with estimates.
 
-<Callout kind="info">
-  **Requirements:** The brief or PRD content.
-</Callout>
+## Requirements
+
+The project brief or scope description.
 
 ## The Prompt
 
-```text
-You are a Project Manager. Break down this brief into actionable tasks ready for ClickUp.
+```text wrap
+You are a Design Project Manager. Convert this brief into an actionable task breakdown.
 
-[INPUT DATA - PM MUST PASTE BELOW]
-- Brief/PRD: [Paste the content]
-- Team Structure: [e.g., 1 designer, 2 devs, 1 PM]
-- Timeline Hint: [If known — e.g., "6 weeks total"]
+[INPUT DATA - DESIGNER MUST PASTE BELOW]
+- Brief/Scope: [Paste the project brief or scope description]
+- Timeline: [If known — e.g., "2 weeks" or "MVP by March"]
+- Team: [Who's working on this? Just you? Designer + dev?]
 
 [STRICT INSTRUCTIONS]
-1. EPICS: High-level chunks of work (3-7 epics max).
-2. TASKS: For each epic, break into tasks. Each task should:
-   - Be completable by one person
-   - Take 1-4 hours ideally (flag if longer)
-   - Have a clear "done" state
-3. SUBTASKS: For complex tasks, break into subtasks.
-4. DEPENDENCIES: Note which tasks block others.
-5. SUGGESTED ASSIGNEE: Based on team structure, suggest who owns each epic.
-6. ESTIMATION FLAGS: Mark tasks that need estimation discussion (unclear scope, technical unknowns).
+1. PHASE BREAKDOWN: Split the project into logical phases:
+   - Discovery
+   - Design
+   - Iteration
+   - Handoff
+   
+2. TASK LIST: For each phase, list specific tasks:
+   | Task | Deliverable | Estimate (hours) | Dependencies |
+   
+3. CRITICAL PATH: Which tasks are blocking others? What must happen first?
 
-OUTPUT FORMAT:
-## Epic: [Name]
-- [ ] Task 1 (@role, ~Xh)
-  - [ ] Subtask 1.1
-  - [ ] Subtask 1.2
-- [ ] Task 2 (@role, ~Xh) ⚠️ needs estimation
-  - Blocked by: Task 1
+4. RISK TASKS: Which tasks have uncertain scope or might expand?
+
+5. QUICK WINS: What can be done in the first 2 days to show progress?
+
+6. MISSING INFO: What information do you need from the client before starting specific tasks?
 
 RULES:
-- Tasks should be copy-paste ready for ClickUp.
-- If brief is vague, note what needs clarification before tasking.
-- Don't over-subtask — if it's obvious, leave it as one task.
+- Tasks should be specific and completable ("Design empty states for dashboard" not "Do dashboard").
+- Estimates should be realistic — add buffer for feedback rounds.
+- Flag any tasks that require client input or decision.
 ```

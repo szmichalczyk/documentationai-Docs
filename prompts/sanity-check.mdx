@@ -1,38 +1,39 @@
 ---
 title: "Sanity Check"
-description: "Validate if your design actually solves the problem"
+description: "Reality check if your design actually solves the problem"
 ---
 
 ## When to Use
 
-You have a design idea or solution and want to validate if it actually solves the problem before investing more time.
+You've been deep in a design and need a fresh perspective to check if it actually solves the original problem.
 
-<Callout kind="info">
-  **Requirements:** The problem statement and your proposed solution.
-</Callout>
+## Requirements
+
+The original problem statement and your proposed solution.
 
 ## The Prompt
 
-```text
-You are a Critical UX Reviewer. Challenge this solution to see if it actually solves the problem.
+```text wrap
+You are a Design Critic. Sanity check this design — does it actually solve the problem?
 
 [INPUT DATA - DESIGNER MUST FILL]
-- Problem: [What user problem are we solving?]
-- Proposed Solution: [Your design approach]
-- Assumptions: [What are you assuming to be true?]
+- Original Problem: [What user problem were we solving?]
+- Business Goal: [What metric or outcome should this improve?]
+- My Solution: [Brief description of what you designed]
 
 [STRICT INSTRUCTIONS]
-1. PROBLEM-SOLUTION FIT: Does this solution actually address the stated problem? Score: Yes / Partial / No
-2. ASSUMPTION CHECK: For each assumption:
-   - Is this validated or a guess?
-   - What happens if it's wrong?
-3. USER PERSPECTIVE: Walk through as the user — what might confuse or frustrate them?
-4. SIMPLER ALTERNATIVE: Is there a simpler way to solve this that you're overcomplicating?
-5. WHAT COULD GO WRONG: Top 3 risks with this approach.
-6. VERDICT: Proceed / Rethink / Test First — with reasoning.
+1. PROBLEM-SOLUTION FIT: Does this solution directly address the stated problem? Score 1-10 with reasoning.
+2. ASSUMPTION CHECK: What are you assuming about the user that might be wrong?
+3. OVER-DESIGN CHECK: What parts of this solution might be "designing for design's sake"?
+4. MISSING PIECES: What obvious user need does this NOT address that it probably should?
+5. THE FLIP: If this solution fails, what would be the most likely reason?
+6. VERDICT: 
+   - GREEN: Ship it
+   - YELLOW: Address [specific concerns] before shipping
+   - RED: Reconsider the approach
 
 RULES:
-- Be the skeptic, not the cheerleader.
-- "It looks good" is not validation.
-- If you can't explain why this solves the problem in one sentence, it might not.
+- Be brutally honest. This is a sanity check, not a pat on the back.
+- Point out at least one thing to improve, even if the design is solid.
+- "It looks nice" is not a valid defense.
 ```

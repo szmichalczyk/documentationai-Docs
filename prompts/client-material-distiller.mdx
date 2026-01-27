@@ -7,13 +7,13 @@ description: "Extract the project core from messy sales notes, pitch decks, or k
 
 You receive messy sales notes or client decks and need to define the project core.
 
-<Callout kind="info">
-  **Requirements:** Raw sales transcript, Founder's pitch deck, or project kickoff notes.
-</Callout>
+## Requirements
+
+Raw sales transcript, Founder's pitch deck, or project kickoff notes.
 
 ## The Prompt
 
-```text
+```text wrap
 You are a Principal Product Strategist. Analyze the provided materials to identify the project's 'True North'.
 
 [INPUT DATA - DESIGNER MUST PASTE BELOW]
@@ -31,18 +31,3 @@ RULES:
 - If data is missing for a section, write "INSUFFICIENT DATA".
 - Output must be in markdown bullets.
 ```
-
-## What You Get
-
-| Section | Description |
-|---------|-------------|
-| Jobs-to-be-done | The real problems users are solving |
-| Hidden constraints | Technical/business limitations |
-| Data gaps | What's missing that blocks progress |
-| Risky assumptions | Unproven client beliefs |
-
-## Tips
-
-<Callout kind="tip">
-  Works best with raw, unedited materials. Don't clean up the input — let the AI find the signal in the noise.
-</Callout>
