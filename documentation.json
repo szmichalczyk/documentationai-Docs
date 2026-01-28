@@ -1,16 +1,12 @@
 {
-  "name": "Tonik Prompts",
+  "name": "tonik",
   "initialRoute": "introduction",
   "colors": {
     "light": {
-      "brand": "#3143e3",
-      "heading": "#1a1a1a",
-      "text": "#374151"
+      "brand": "#000000"
     },
     "dark": {
-      "brand": "#85a1ff",
-      "heading": "#f2f2f2",
-      "text": "#c1c1c1"
+      "brand": "#000000"
     }
   },
   "navigation": {
@@ -23,77 +19,102 @@
             "group": "Getting Started",
             "icon": "rocket",
             "pages": [
-              { "title": "Introduction", "path": "introduction", "icon": "star" }
+              {
+                "title": "Introduction",
+                "path": "introduction",
+                "icon": "home"
+              }
             ]
           },
           {
             "group": "Brief & Research",
             "icon": "search",
             "pages": [
-              { "title": "Client Material Distiller", "path": "prompts/client-material-distiller" },
-              { "title": "Research Synthesis", "path": "prompts/research-synthesis" },
-              { "title": "Domain Literacy Hack", "path": "prompts/domain-literacy-hack" },
-              { "title": "Competitive UX Teardown", "path": "prompts/competitive-ux-tear-down" },
-              { "title": "ELI10 Explainer", "path": "prompts/eli10-explainer" }
+              { "title": "Client Material Distiller", "path": "prompts/client-material-distiller", "icon": "file-text" },
+              { "title": "Research Synthesis", "path": "prompts/research-synthesis", "icon": "microscope" },
+              { "title": "Domain Literacy Hack", "path": "prompts/domain-literacy-hack", "icon": "globe" },
+              { "title": "Competitive UX Teardown", "path": "prompts/competitive-ux-tear-down", "icon": "layout" },
+              { "title": "ELI10 Explainer", "path": "prompts/eli10-explainer", "icon": "lightbulb" }
             ]
           },
           {
             "group": "Meetings & Communication",
             "icon": "message-circle",
             "pages": [
-              { "title": "Post-Call Summary", "path": "prompts/post-call" },
-              { "title": "Meeting Summary (PM)", "path": "prompts/meeting-summary-pm" },
-              { "title": "Weekly Meeting Prep", "path": "prompts/weekly-meeting-prep" },
-              { "title": "Discovery Session Agenda", "path": "prompts/discovery-session-agenda" },
-              { "title": "Slack Update", "path": "prompts/slack-update" },
-              { "title": "Loom Script", "path": "prompts/loom-script" },
-              { "title": "Retro Summary", "path": "prompts/retro-summary" }
+              { "title": "Post-Call Summary", "path": "prompts/post-call", "icon": "phone" },
+              { "title": "Meeting Summary (PM)", "path": "prompts/meeting-summary-pm", "icon": "clipboard" },
+              { "title": "Weekly Meeting Prep", "path": "prompts/weekly-meeting-prep", "icon": "calendar" },
+              { "title": "Discovery Session Agenda", "path": "prompts/discovery-session-agenda", "icon": "compass" },
+              { "title": "Slack Update", "path": "prompts/slack-update", "icon": "send" },
+              { "title": "Loom Script", "path": "prompts/loom-script", "icon": "video" },
+              { "title": "Retro Summary", "path": "prompts/retro-summary", "icon": "refresh-cw" }
             ]
           },
           {
             "group": "Strategy & Scoping",
             "icon": "target",
             "pages": [
-              { "title": "Consulting Transcript Analysis", "path": "prompts/consulting-transcript-analysis" },
-              { "title": "Feature Prioritization", "path": "prompts/feature-prioritization" },
-              { "title": "USM Skeleton", "path": "prompts/usm-skeleton" },
-              { "title": "Brief to Tasks", "path": "prompts/brief-to-tasks" },
-              { "title": "Brainstorming Solution", "path": "prompts/brainstorming-solution" },
-              { "title": "Process Optimizer", "path": "prompts/process-optimizer" }
+              { "title": "Consulting Transcript Analysis", "path": "prompts/consulting-transcript-analysis", "icon": "briefcase" },
+              { "title": "Feature Prioritization", "path": "prompts/feature-prioritization", "icon": "list-ordered" },
+              { "title": "USM Skeleton", "path": "prompts/usm-skeleton", "icon": "map" },
+              { "title": "Brief to Tasks", "path": "prompts/brief-to-tasks", "icon": "check-square" },
+              { "title": "Brainstorming Solution", "path": "prompts/brainstorming-solution", "icon": "zap" },
+              { "title": "Process Optimizer", "path": "prompts/process-optimizer", "icon": "settings" }
             ]
           },
           {
             "group": "Design & Validation",
             "icon": "pen-tool",
             "pages": [
-              { "title": "Landing Page Structure", "path": "prompts/landing-page-structure" },
-              { "title": "Flow Simplifier", "path": "prompts/flow-simplifier" },
-              { "title": "Edge Case Finder", "path": "prompts/edge-case-finder" },
-              { "title": "Sanity Check", "path": "prompts/sanity-check" },
-              { "title": "UX Copy", "path": "prompts/ux-copy" },
-              { "title": "Dev Handoff Spec", "path": "prompts/dev-handoff-spec" }
+              { "title": "Landing Page Structure", "path": "prompts/landing-page-structure", "icon": "layout" },
+              { "title": "Flow Simplifier", "path": "prompts/flow-simplifier", "icon": "minimize" },
+              { "title": "Edge Case Finder", "path": "prompts/edge-case-finder", "icon": "alert-triangle" },
+              { "title": "Sanity Check", "path": "prompts/sanity-check", "icon": "check-circle" },
+              { "title": "UX Copy", "path": "prompts/ux-copy", "icon": "type" },
+              { "title": "Dev Handoff Spec", "path": "prompts/dev-handoff-spec", "icon": "code" }
             ]
           },
           {
             "group": "Client Management",
             "icon": "users",
             "pages": [
-              { "title": "Strategic No Pushback", "path": "prompts/strategic-no-pushback" },
-              { "title": "Contradiction Finder", "path": "prompts/contradiction-finder" },
-              { "title": "Design Review Argumentation", "path": "prompts/design-review-argumentation" },
-              { "title": "Communication Coach", "path": "prompts/communication-coach" }
+              { "title": "Strategic No Pushback", "path": "prompts/strategic-no-pushback", "icon": "shield" },
+              { "title": "Contradiction Finder", "path": "prompts/contradiction-finder", "icon": "alert-circle" },
+              { "title": "Design Review Argumentation", "path": "prompts/design-review-argumentation", "icon": "message-square" },
+              { "title": "Communication Coach", "path": "prompts/communication-coach", "icon": "mic" }
             ]
           },
           {
             "group": "Branding",
             "icon": "palette",
             "pages": [
-              { "title": "Brand Workshop Synthesis", "path": "prompts/brand-workshop-synthesis" },
-              { "title": "Moodboard Narrative", "path": "prompts/moodboard-narrative" }
+              { "title": "Brand Workshop Synthesis", "path": "prompts/brand-workshop-synthesis", "icon": "layers" },
+              { "title": "Moodboard Narrative", "path": "prompts/moodboard-narrative", "icon": "image" }
             ]
+          }
+        ]
+      },
+      {
+        "tab": "Changelog",
+        "icon": "clock",
+        "pages": [
+          {
+            "title": "Release History",
+            "path": "changelog",
+            "icon": "history"
           }
         ]
       }
     ]
-  }
+  },
+  "template": "classic",
+  "seo": {
+    "robots:index": false,
+    "robots:follow": false,
+    "sitemap:enabled": false,
+    "llms-txt:enabled": false
+  },
+  "logo-dark": "https://blob-cdn.documentation.ai/org-a21517d1-ddaa-4783-84c1-de2014a43320/doc-265634e1-3244-447a-9477-8d32fa42424b/1768485672439-89s6mva5mjx-logo_white.svg?q=85&fm=auto&auto=compress%2Cformat",
+  "logo-light": "https://blob-cdn.documentation.ai/org-a21517d1-ddaa-4783-84c1-de2014a43320/doc-265634e1-3244-447a-9477-8d32fa42424b/1768485682986-rknnmg9bo99-logo-dark.svg?q=85&fm=auto&auto=compress%2Cformat",
+  "favicon": "https://blob-cdn.documentation.ai/org-a21517d1-ddaa-4783-84c1-de2014a43320/doc-265634e1-3244-447a-9477-8d32fa42424b/1768485763017-i9vgxku9u6-Profile-photo---1000x1000.png?q=85&fm=auto&auto=compress%2Cformat"
 }
